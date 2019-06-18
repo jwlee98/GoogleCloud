@@ -16,7 +16,7 @@ public class WorkController {
   RestTemplate restTemplate;
 
   public void meeting() {
-    String result = restTemplate.getForObject("http://localhost:8080/meet", String.class);
+    String result = restTemplate.getForObject("http://localhost:80/meet", String.class);
     log.info(result);
   }
 
